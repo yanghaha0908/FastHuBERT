@@ -26,7 +26,7 @@ def load_fbank(manifest_path, max_keep, min_keep):
             elif max_keep is not None and sz > max_keep:
                 n_long += 1
             else:
-                names.append("/data/ygr/librispeech/"+ items[1][35:] )   #last change   names.append(items[1])
+                names.append(items[1])
                 inds.append(ind)
                 sizes.append(sz)
     tot = ind + 1   

@@ -164,7 +164,7 @@ class FastHubertModel(HubertModel):
             layer=None if output_layer is None else output_layer - 1,
         )  
         
-        if self.ils:
+        if self.ils and self.fine_tuning==False:
             ils_results = []
             for layer in self.predict_layers:
                 if layer < len(layer_results):
@@ -173,7 +173,7 @@ class FastHubertModel(HubertModel):
                     ils_results.append(layer_results[-1][0].transpose(0, 1))
 
         if features_only:  
-            return {"x": x, "padding_mask": padding_mask, "features": features, "layer_results": layer_results}
+            return {"x": x, "padding_mask": padding_mask, "features": features}
 
         if self.ils:
             logit_m_list = []
@@ -227,11 +227,11 @@ class FastHubertModel(HubertModel):
 
             targ_m_list=target_list[0][masked_indices]
             targ_m_list=targ_m_list.long()
-            targ_m_list = [targ_m_list for _ in range(len(target_list))]
+            targ_m_list_all = [targ_m_list for _ in range(len(target_list))]
 
             targ_u_list=target_list[0][nomask_indices]
             targ_u_list = targ_u_list.long()
-            targ_u_list = [targ_u_list for _ in range(len(target_list))]
+            targ_u_list_all = [targ_u_list for _ in range(len(target_list))]
         
 
         result = {
