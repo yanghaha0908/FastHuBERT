@@ -23,9 +23,7 @@ git clone https://github.com/yanghaha0908/FastHuBERT
 ## Data preparation
 <!-- Refer to [this](https://github.com/chenxie95/fairseq-asr/blob/main/examples/speech_recognition_sjtu/prep_data_npyfile.py) to extract Fbank features.  private repo 这行需要写吗?-->
 
-<!-- Refer to [this](https://arxiv.org/abs/2306.08920) to pre -->
-
-Refer to [this](https://arxiv.org/abs/2306.08920) to prepare data.
+Refer to [this](https://github.com/facebookresearch/fairseq/tree/main/examples/hubert#data-preparation) to prepare data.  
 
 
 ## Pre-train a Fast-HuBERT model
