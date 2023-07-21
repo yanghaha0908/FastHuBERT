@@ -86,6 +86,8 @@ class FastHubertModel(HubertModel):
         specaug_config = {"freq_mask_F": cfg.freq_mask_F, "freq_mask_N": cfg.freq_mask_N, "time_mask_N": cfg.time_mask_N, "time_mask_T": cfg.time_mask_T, "time_mask_p": cfg.time_mask_p, "time_wrap_W": cfg.time_wrap_W}
         self.specaug_transform = SpecAugmentTransform.from_config_dict(specaug_config)
 
+        self.final_proj = nn.Linear(cfg.encoder_embed_dim, self.num_classes)
+        
         # ILS
         self.ils=cfg.ils
         self.predict_layers = eval(cfg.predict_layers)   
