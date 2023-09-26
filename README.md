@@ -1,4 +1,6 @@
 # __Fast-HuBERT__
+## Paper
+[https://arxiv.org/abs/2309.13860](https://arxiv.org/abs/2309.13860)
 ## Intro 
 Existing speech-based SSL models face a common dilemma in terms of computational cost, which might hinder their potential application and in-depth academic research. Fast-HuBERT is proposed to improve the pretraining efficiency.
 
