@@ -21,6 +21,12 @@ pip install --editable ./
 git clone https://github.com/yanghaha0908/FastHuBERT
 ```
 
+## Wandb log
+Pretrain:
+[https://wandb.ai/yanghaha/FastHuBERT?workspace=user-yanghaha](https://wandb.ai/yanghaha/FastHuBERT?workspace=user-yanghaha)  
+<!-- Finetune:
+[S1]() &ensp;[S2]()&ensp; [S3]()&ensp; [S4]()&ensp; [S5]()&ensp; [S6]()&ensp; [S7]()&ensp; [S8]() -->
+
 
 ## Data preparation
 <!-- Refer to [this](https://github.com/chenxie95/fairseq-asr/blob/main/examples/speech_recognition_sjtu/prep_data_npyfile.py) to extract Fbank features.  private repo 这行需要写吗?-->
@@ -87,3 +93,16 @@ $ python examples/speech_recognition/new/infer.py \
     decoding.lmpath=/path/to/arpa \
 ```
 
+
+
+## Citation
+```
+@article{yang2023fast,  
+  title={Fast-HuBERT: An Efficient Training Framework for Self-Supervised Speech Representation Learning},  
+  author={Yang, Guanrou and Ma, Ziyang and Zheng, Zhisheng and Song, Yakun and Niu, Zhikang and Chen, Xie},  
+  journal={arXiv preprint arXiv:2309.13860},  
+  year={2023}
+}
+```
+<br>
+Contact: yangguanrou@sjtu.edu.cn
