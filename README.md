@@ -33,6 +33,8 @@ Pretrain:
 
 Refer to [this](https://github.com/facebookresearch/fairseq/tree/main/examples/hubert#data-preparation) to prepare data.  
 
+Fbank extraction code is under [utils](https://github.com/yanghaha0908/FastHuBERT/tree/master/utils). Prepare the info file like *librispeech_example.info*, and execute *run.sh*.
+
 
 ## Pre-train a Fast-HuBERT model
 
