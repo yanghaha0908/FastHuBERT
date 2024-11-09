@@ -1,0 +1,18 @@
+WER: 10.866990179970196
+err / num_ref_words = 5688 / 52342
+
+_name: null
+nbest: 1
+unitlm: false
+lmpath: ???
+lexicon: null
+beam: 50
+beamthreshold: 50.0
+beamsizetoken: null
+wordscore: -1.0
+unkweight: -.inf
+silweight: 0.0
+lmweight: 2.0
+type: viterbi
+unique_wer_file: true
+results_path: null

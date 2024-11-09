@@ -27,13 +27,18 @@ Pretrain:
 <!-- Finetune:
 [S1]() &ensp;[S2]()&ensp; [S3]()&ensp; [S4]()&ensp; [S5]()&ensp; [S6]()&ensp; [S7]()&ensp; [S8]() -->
 
+## Checkpoint for S8 system
+Pretrain: [checkpoint280.pt](https://drive.google.com/file/d/1luGaCzw9_LnbWKF0veztGTqgBNokmNqb/view?usp=drive_link)  
+Finetune: [fasthubert_s8.pt](https://drive.google.com/file/d/1nm8p4ouIYs46LYZ846FNMNKfrOIclD63/view?usp=drive_link)  
+Decoding-related files are uploaded to the `decode` folder.
+
 
 ## Data preparation
 <!-- Refer to [this](https://github.com/chenxie95/fairseq-asr/blob/main/examples/speech_recognition_sjtu/prep_data_npyfile.py) to extract Fbank features.  private repo 这行需要写吗?-->
 
 Refer to [this](https://github.com/facebookresearch/fairseq/tree/main/examples/hubert#data-preparation) to prepare data.  
 
-Fbank extraction code is under [utils](https://github.com/yanghaha0908/FastHuBERT/tree/master/utils). Prepare the info file like *librispeech_example.info*, and execute *run.sh*.
+Fbank extraction code is under [utils](https://github.com/yanghaha0908/FastHuBERT/tree/master/utils). Prepare the info file like `librispeech_example.info`, and execute `run.sh`.
 
 
 ## Pre-train a Fast-HuBERT model
